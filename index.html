@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <!-- Left side (Image & Background) -->
         <div class="left-section">
-            <img src="your-image.jpg" alt="Portfolio Image">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/image1.jpg" style="width:100%">
         </div>
+        <div class="mySlides fade">
+            <img src="images/image2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image3.jpg" style="width:100%">
+        </div>
+    </div>
+</div>
+
 
         <!-- Right side (Text Content) -->
         <div class="right-section">
-            <h1>Your Name</h1>
-            <p>City | Filmmaker</p>
-            <div class="social-links">
-                <a href="#">Instagram</a> | 
-                <a href="#">Vimeo</a> | 
-                <a href="#">Twitter</a>
-            </div>
-            <p>Representation: Your Agency</p>
+            <h1>Andrew Turner</h1>
+            <p>Bozeman | Filmmaker</p>
+           <div class="social-links">
+    <a href="https://www.instagram.com/andrew.turner" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+    <a href="https://vimeo.com/yourusername" target="_blank" rel="noopener noreferrer">Vimeo</a> | 
+    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+</div>
+
+            <p>Studnet at Montana</p>
             
             <div class="content">
                 <h2>DOC</h2>
@@ -32,11 +44,27 @@
                 <h2>INTERNET</h2>
                 <p>Your Work</p>
 
-                <h2>POP VIDEO ESSAYS</h2>
-                <p>Video 1</p>
-                <p>Video 2</p>
+                <h2>CONTACT </h2>
+                <p>andrewturnerfilms@gmail.com</p>
+                <p>+1 (406) 404 9525</p>
             </div>
         </div>
     </div>
+    let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+showSlides();
+
 </body>
 </html>
