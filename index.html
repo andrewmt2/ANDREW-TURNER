@@ -10,8 +10,19 @@
     <div class="container">
         <!-- Left side (Image & Background) -->
         <div class="left-section">
-            <img src="images/your-image.jpg" alt="Portfolio Image">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/image1.jpg" style="width:100%">
         </div>
+        <div class="mySlides fade">
+            <img src="images/image2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image3.jpg" style="width:100%">
+        </div>
+    </div>
+</div>
+
 
         <!-- Right side (Text Content) -->
         <div class="right-section">
@@ -38,5 +49,21 @@
             </div>
         </div>
     </div>
+    let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+showSlides();
+
 </body>
 </html>
