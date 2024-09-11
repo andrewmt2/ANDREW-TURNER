@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section */
+.left-section {
+    background-color: #ffeb3b; /* Yellow color */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section img {
+    max-width: 70%;
+    max-height: 80%;
+    object-fit: cover;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.content p {
+    margin: 5px 0;
+}
