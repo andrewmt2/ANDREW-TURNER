@@ -65,3 +65,26 @@ p {
 .content p {
     margin: 5px 0;
 }
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fade effect */
+.fade {
+    animation: fade 3s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
