@@ -17,9 +17,9 @@ body {
 
 /* Left Section */
 .left-section {
-    background-color: #ffeb3b; /* Yellow color */
+    background-color: #ea9d2a; /* Yellow color */
     flex: 1;
-    display: flex;
+    display: flex;s
     justify-content: center;
     align-items: center;
 }
