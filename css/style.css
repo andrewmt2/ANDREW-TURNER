@@ -19,7 +19,7 @@ body {
 .left-section {
     background-color: #ea9d2a; /* Yellow color */
     flex: 1;
-    display: flex;s
+    display: flex;
     justify-content: center;
     align-items: center;
 }
