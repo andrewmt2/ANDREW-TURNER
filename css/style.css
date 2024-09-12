@@ -5,9 +5,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Nitti Grotesk';
+    src: url('fonts/Nitti-Grotesk.ttf') format('woff2'),
+         url('fonts/Nitti-Bold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 body {
-    font-family: Arial, sans-serif;
     background-color: #fff;
+    
 }
 
 .container {
@@ -43,19 +51,23 @@ body {
     padding: 30px;
     max-width: 620px; /* Adjust to control width of the text section */
     color: #333;
-    font-family: 'Helvetica', sans-serif;
+    font-family: "Nitti Grotesk", Grotesk, sans-serif;
     background-color: rgb(244, 239, 239);
 }
 
 /* Styling for the text */
 .right-column h1 {
-    font-size: 48px; /* Adjust to match the previous design */
+    font-size: 64px; /* Adjust to match the previous design */
     margin-bottom: 10px;
 }
 
 .right-column p {
     font-size: 18px; /* Adjust to match previous design */
     line-height: 1.6;
+    font-family: Nitti, Social /*!Persona*/;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* Contact section styling */
@@ -117,6 +129,10 @@ video {
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    line-height: 1.5;
+    font-family: Nitti, Social /*!Persona*/;
+    font-style: normal;
+    font-weight: 400;
 }
 
 p {
@@ -124,7 +140,7 @@ p {
 }
 
 .social-links a {
-    color: black;
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
     margin-right: 10px;
     font-weight: bold;
@@ -133,6 +149,10 @@ p {
 .content h2 {
     font-size: 1.5rem;
     margin-top: 30px;
+    line-height: 1.5;
+    font-family: Nitti, Social /*!Persona*/;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .content p {
