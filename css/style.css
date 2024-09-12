@@ -71,9 +71,6 @@ p {
     position: relative;
     max-width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Hide the images by default */
@@ -83,7 +80,7 @@ p {
 
 /* Fade effect */
 .fade {
-    animation: fade 3s ease-in-out infinite;
+    animation: fade 6s ease-in-out infinite;
 }
 
 @keyframes fade {
